@@ -13,18 +13,19 @@ const Header = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const headerClasses = `fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    const headerClasses = `fixed top-0 left-0 right-0 z-50 transition-all duration-300 p-4 ${
         isScrolled ? 'bg-gray-900/80 border-b border-gray-800 shadow shadow-gray-400' : ''
     }`;
 
     return (
         <header id="header" className={`${headerClasses}`}>
-            <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
+            <nav className="container mx-auto px-2  flex justify-between items-center">
                 <div className="transform transition-transform hover:scale-95">
-                  <img src={Logo} alt="Saurabh"className="w-28 h-20 rounded-lg shadow shadow-white"/>
-                </div>
+                  <img src={Logo} alt="Saurabh"className="sm:w-24 w-12 sm:h-12 h-8 rounded-lg shadow shadow-white"/>
+                </div> 
                 <div className="hidden md:flex space-x-8 items-center">
                     <a className="flex gap-2 text-center text-gray-300 hover:text-teal-400 transition-colors" href="https://drive.google.com/file/d/1Vyzul_aBaqT3NuCEO4r3zmuaCX9vIOxR/view?usp=sharing" target="_blank">Resume <TbCloudDownload className="text-xl mr-1" /></a>
+                    <a href="#home" className="text-gray-300 hover:text-teal-400 transition-colors">Home</a>
                     <a href="#about" className="text-gray-300 hover:text-teal-400 transition-colors">About</a>
                     <a href="#projects" className="text-gray-300 hover:text-teal-400 transition-colors">Projects</a>
                     <a href="#skills" className="text-gray-300 hover:text-teal-400 transition-colors">Skills</a>
@@ -36,11 +37,12 @@ const Header = () => {
             </nav>
             {/* Mobile Menu */}
             {isMenuOpen && (
-                <div className="md:hidden bg-gray-800" onClick={() => setIsMenuOpen(false)}>
-                    <a href="#about" className="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">About</a>
-                    <a href="#projects" className="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">Projects</a>
-                    <a href="#skills" className="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">Skills</a>
-                    <a href="#contact" className="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">Contact</a>
+                <div className="md:hidden bg-gray-800 mt-1 w-24 absolute right-6" onClick={() => setIsMenuOpen(false)}>
+                    <a href="#home" className="block py-2 px-4 text-md font-bold text-gray-300 hover:bg-gray-700">Home</a>
+                    <a href="#about" className="block py-2 px-4  text-gray-300 hover:bg-gray-700 text-md font-bold ">About</a>
+                    <a href="#projects" className="block py-2 px-4 text-md font-bold text-gray-300 hover:bg-gray-700">Projects</a>
+                    <a href="#skills" className="block py-2 px-4 text-md font-bold text-gray-300 hover:bg-gray-700">Skills</a>
+                    <a href="#contact" className="block py-2 px-4 text-md font-bold text-gray-300 hover:bg-gray-700">Contact</a>
                 </div>
             )}
         </header>

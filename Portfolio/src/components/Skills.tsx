@@ -36,23 +36,23 @@ const Skills = () => {
     }
   };
   return (
-    <section id="skills" className="py-24 bg-gray-900/50">
+    <section id="skills" className=" bg-gray-900/50">
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center">
-          <h2  className="section-title text-2xl hover:text-teal-500">
+          <h2  className="section-title text-md pt-2 sm:text-2xl hover:text-teal-500">
             Technical Skills:
             <LiaLocationArrowSolid className="transform rotate-90 inline-block" />
           </h2>
         </div>
-        <div className="flex flex-col gap-8 max-w-4xl mx-auto text-center items-center justify-center">
-          <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-col gap-4 max-w-4xl mx-auto text-center items-center justify-center">
+          <div className="flex flex-wrap justify-center gap-2">
             {skillsData.map((skill, index) => (
               <div
                 key={index}
-                className="flex items-center gap-2 bg-gray-800 rounded-full px-5 py-2 m-2 shadow-md hover:bg-gray-700 transition-all duration-200 skill-badge"
+                className="flex items-center gap-0.5 sm:gap-2 bg-gray-800 rounded-full px-5 py-2 m-2 shadow-md hover:bg-gray-700 transition-all duration-200 skill-badge"
               >
-                <span className="text-xl">{skill.icon}</span>
-                <span className="text-gray-100 font-medium">{skill.name}</span>
+                <span className="text-xs sm:text-xl">{skill.icon}</span>
+                <span className="text-gray-100 font-medium text-xs sm:text-xl">{skill.name}</span>
               </div>
             ))}
           </div>
@@ -71,7 +71,7 @@ const Skills = () => {
             /> */}
             {/* {selectedFile && ( */}
               <button
-                className="flex items-center px-3 gap-2 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
+                className="flex items-center px-3 py-0.5  sm:py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
                 /* onClick={() => {
                   if (selectedFile) {
                     const fileURL = URL.createObjectURL(selectedFile);
