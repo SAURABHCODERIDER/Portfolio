@@ -1,6 +1,5 @@
 import ProjectCard from "./ProjesctCard";
 import netflix from '../assets/netflix_port.png'
-import swiggy from '../assets/swiggy_port.png'
 import LaundaryApp from '../assets/LaundaryApp.png'
 import { LiaLocationArrowSolid } from "react-icons/lia";
 

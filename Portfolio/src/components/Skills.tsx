@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import {
   FaJs,
   FaReact,
@@ -28,13 +28,13 @@ const skillsData = [
 ];
 
 const Skills = () => {
-  const [selectedFile, setSelectedFile] = useState<File | null>(null);
-  const handleFile = (e: React.ChangeEvent<HTMLInputElement>) => {
+  // const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  /* const handleFile = (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files;
     if (files && files.length > 0) {
       setSelectedFile(files[0]);
     }
-  };
+  }; */
   return (
     <section id="skills" className="font-serif font-bold text-gray-400">
       <div className="container mx-auto px-6">
