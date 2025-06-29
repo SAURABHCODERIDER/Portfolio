@@ -7,15 +7,15 @@ const ProjectCard = ({
     liveUrl,
     sourceUrl,
 }: ProjectCardType) => (
-    <div className="flex glass-effect rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex-col lg:flex-col sm:flex-row">
-        <div className="w-full sm:w-full">
+    <div className="flex w-full  glass-effect rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex-col ">
+        <div className="w-full">
             <img
                 className="object-cover w-full h-48"
                 src={imageUrl}
                 alt={`${title} Screenshot`}
             />
         </div>
-        <div className="p-6 flex flex-col justify-between  w-full font-serif font-bold text-gray-400">
+        <div className="p-6   justify-between  w-full font-serif font-bold text-gray-400">
             <div>
                 <h3 className="font-bold text-xl mb-2 text-white">{title}</h3>
                 <p className="text-gray-400 text-base mb-4">{description}</p>
