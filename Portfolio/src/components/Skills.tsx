@@ -36,7 +36,7 @@ const Skills = () => {
     }
   };
   return (
-    <section id="skills" className=" bg-gray-900/50">
+    <section id="skills" className="font-serif font-bold text-gray-400">
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center">
           <h2  className="section-title text-md pt-2 sm:text-2xl hover:text-teal-500">

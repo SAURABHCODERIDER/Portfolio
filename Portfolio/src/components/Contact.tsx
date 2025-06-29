@@ -6,14 +6,14 @@ const Contact = ({
   onFormSubmit: (event: FormEvent<HTMLFormElement>) => void;
 }) => {
   return (
-    <section id="contact" className="py-8">
-      <div className="container mx-auto px-6">
-        <h2 className="section-title text-md sm:text-2xl hover:text-teal-500">
+    <section id="contact" className="py-8 font-serif font-bold text-gray-400">
+      <div className="container mx-auto px-6 ">
+        <h2 className="section-title text-md sm:text-2xl hover:text-teal-500 ">
           Contact Us:
           <LiaLocationArrowSolid className="transform rotate-90 inline-block" />
         </h2>
         <div className="max-w-lg mx-auto text-center">
-          <p className="text-gray-300 font-bold text-sm sm:text-xl mb-4">
+          <p className="text-sm sm:text-xl mb-4">
             I'm currently available for freelance work and open to new
             opportunities. If you have a project in mind or just want to say
             hello, feel free to reach out!

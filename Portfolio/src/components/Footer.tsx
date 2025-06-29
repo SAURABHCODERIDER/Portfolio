@@ -1,7 +1,7 @@
 import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => (
-  <footer className="bg-gray-900/80 border-t border-gray-800 shadow shadow-gray-200">
+  <footer className=" border-t  shadow shadow-gray-200 font-serif font-bold text-gray-400">
     <div className="container mx-auto px-6 py-6 text-gray-500 flex flex-col md:flex-row items-center justify-between">
       <a href="#home" className="hover:text-teal-500 mb-4 md:mb-0 text-center md:text-left w-full md:w-auto">
         &copy; {new Date().getFullYear()} Saurabhkumar. All Rights Reserved.

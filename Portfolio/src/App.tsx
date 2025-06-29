@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -10,6 +9,7 @@ import SuccessModal from './components/SuccessModal';
 import GlobalStyles from './components/GlobalStyle';
 import emailjs from '@emailjs/browser'
 import { toast, ToastContainer } from 'react-toastify';
+import About from './components/About';
 export default function App() {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -30,7 +30,8 @@ export default function App() {
     }
 
     return (
-        <>
+        <div className='dark:bg-black'>
+
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
             <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -39,7 +40,7 @@ export default function App() {
             <Header />
             <main className="pt-24 md:pt-32">
                 <Home />
-                <About />
+                 <About/>
                 <Projects />
                 <Skills />
                 <Contact onFormSubmit={handleFormSubmit} />
@@ -47,6 +48,6 @@ export default function App() {
             <Footer />
             <SuccessModal isOpen={isModalOpen} onClose={closeModal} />
             <ToastContainer/>
-        </>
+        </div>
     );
 }

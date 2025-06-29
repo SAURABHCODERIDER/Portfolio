@@ -2,18 +2,18 @@ import { LiaLocationArrowSolid } from "react-icons/lia";
 import saurabhimg2 from "../assets/myImg_port.png";
 const About = () => {
   return (
-    <section id="about" className=" bg-gray-900/50">
+    <section id="abouts" className="">
       <div className="flex justify-center items-center px-4 pb-2">
       <div className="h-0.5 w-full bg-gray-400 px-4" />
       </div>
       <div className="container mx-auto px-6">
-      <h2 className="section-title text-md sm:text-2xl hover:text-teal-500 pb-2">
+      <h2 className="section-title text-md sm:text-2xl hover:text-teal-500 pb-2 font-serif font-bold text-gray-400">
         About Me:
         <LiaLocationArrowSolid className="transform rotate-90 inline-block" />
       </h2>
       <div className="max-w-6xl mx-auto flex justify-start items-start flex-col md:flex-row gap-2">
-        <div className="md:w-full text-center text-sm sm:text-2xl md:text-left text-gray-300">
-        <p className="mb-4">
+        <div className="md:w-full text-center text-sm sm:text-2xl md:text-left text-gray-400 font-serif font-bold">
+        <p className="mb-4  ">
           Hello! I'm a dedicated and passionate Front-end developer with a
           knack for building elegant solutions to complex problems. My
           journey into web development started with a simple "Hello World"
@@ -39,7 +39,7 @@ const About = () => {
           className="w-120 h-80 lg:h-full object-cover border-3 border-teal-100 p-1 rounded-2xl bg-blue-200"
           />
         </div>
-        <h1 className="font-bold sm:text-sm md:text-3xl  lg:text-2xl text-teal-600">
+        <h1 className="font-md sm:text-sm md:text-3xl  lg:text-2xl text-teal-600 font-serif">
           Saurabh Kumar Front-end developer
         </h1>
         </div>
