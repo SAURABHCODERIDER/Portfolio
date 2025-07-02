@@ -37,7 +37,9 @@ const Header = () => {
               className="sm:w-24 w-12 sm:h-12 h-8 rounded-lg shadow shadow-white"
             />
           </div>
-          <div className="flex gap-8 justify-center items-center">
+         
+          <div className="flex basis-auto gap-8">
+             <div className="flex gap-8 justify-center items-center">
             <div>
               <button
                 onClick={toggleTheme}
@@ -114,9 +116,10 @@ const Header = () => {
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
+                ></path>
             </svg>
           </button>
+          </div>
         </div>
       </nav>
       {/* Mobile Menu */}

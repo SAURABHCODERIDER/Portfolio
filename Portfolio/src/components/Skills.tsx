@@ -16,6 +16,7 @@ const skillsData = [
   { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
   { name: "TypeScript", icon: <SiTypescript className="text-blue-500" /> },
   { name: "React", icon: <FaReact className="text-cyan-400" /> },
+  { name: "Next.js", icon: <FaReact className="text-cyan-400" /> },
   { name: "React Native", icon: <FaReact className="text-blue-400" /> },
   { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
   { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },

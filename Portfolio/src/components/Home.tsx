@@ -18,7 +18,7 @@ const Home = () => {
     greetText = "Good Night!";
   }
 
-  const showText = `${greetText} Hi I'm Saurabh Kumar`;
+  const showText = `${greetText} Hello I'm Saurabh Kumar`;
   useEffect(()=>{
    if(currentIndex<showText.length){
     const id = setTimeout(()=>{
@@ -59,8 +59,8 @@ useEffect(() => {
           exit={{ opacity: 0 }}
           transition={{ delay: ind * 0.05, type: "spring" }}
           className={`${
-            ind < greetText.length ? "text-cyan-800" : "text-white"
-          } text-4xl md:text-5xl sm:text-3xl font-extrabold font-serif leading-tight${char === " " ? " mx-2" : ""}`}
+            ind < greetText.length ? "text-cyan-800" : "text-pink-200"
+          } text-xl md:text-3xl sm:text-md font-extrabold font-serif leading-tight${char === " " ? " mx-2" : ""}`}
           >
           {char === " " ? "" : char}
           </motion.span>
